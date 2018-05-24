@@ -1,0 +1,135 @@
+.slider-menu{
+    width: 100%;
+    display: flex;
+}
+
+.slider-text{
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+    margin-left: 15vw;
+}
+
+.top-banner-text{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+
+    font-family: "LuxuryRoyaleJF";
+    color: #78645d;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.line {
+    width: 30%;
+    border-top:1px solid #78645d;
+}
+
+.banner-title{
+    font-family: "HelveticaNeueLTStd-HvCn";
+    font-size: 8vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 4px solid #78645d;
+
+    background: url("../img/crazy_summer_background.png");
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner-text{
+    font-family: "HelveticaNeueLTStd-LtCn";
+    font-size: 3vw;
+    margin-top: 4px;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #78645d;
+    color: #78645d;
+}
+
+.slider-img{
+    width: 100%;
+}
+.slider-img-invert{
+    filter: invert(100%);
+    width: 100%;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 12px;
+}
+
+.slick-prev, .slick-next{
+    top: 13.3vw;
+    z-index: 1;
+}
+
+.slick-next:before, .slick-prev:before{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    font-size: 0;
+}
+
+.slick-next:focus:before , .slick-prev:focus:before{
+    opacity: 0.7;
+}
+
+.slick-next:hover:before , .slick-prev:hover:before{
+    opacity: 1;
+}
+
+.slick-next:before{
+    height: 120px;
+    background-image: url("../img/slick_right_arrow.png");
+}
+
+.slick-prev:before{
+    height: 120px;
+    background-image: url("../img/slick_left_arrow.png");
+}
+
+.slick-dots{
+    top: 100%;
+    padding-top: 1.5vw;
+}
+
+.slick-dots li button[tabindex="0"]:before{
+    font-size: 0.916vw;
+    color: #fd926d;
+    opacity: unset;
+}
+.slick-dots li button[tabindex="-1"]:before{
+    font-size: 0.916vw;
+    color: #867a76;
+    opacity: 0.6;
+}
+
+.slider-button{
+    margin-top: 0.833vw;
+    font-family: "HelveticaNeueLTStd-Th";
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2vw;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.91vw;
+    width: 12vw;
+    background-color: #fd926d;
+    border-bottom: 3px solid #dd6b44;
+}
